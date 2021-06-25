@@ -43,3 +43,4 @@ Route::get('/agregar-otros-productos-en-dieta', function () {
 Route::get('/agregar-productos-marinos', function () {
     return view('ProductosMarinos');
 });
+/*comentario de prueba*/ 
