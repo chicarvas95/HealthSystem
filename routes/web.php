@@ -11,36 +11,52 @@
 |
 */
 
-Route::get('/', function () {
+
+Route::get('/1', function () {
+    return view('PerderPeso');
+});
+
+Route::get('/2', function () {
+    return view('SeleccionaGenero');
+});
+
+Route::get('/3', function () {
+    return view('PesoDeseado');
+});
+
+Route::get('/4', function () {
+    return view('ComprobarMedidas');
+});
+
+Route::get('/6', function () {
     return view('DiaComun');
 });
 
-Route::get('/Encuesta-comidas-al-dia', function () {
+Route::get('/7', function () {
     return view('Encuesta');
 });
-Route::get('/Encuesta-ejercicio-al-dia', function () {
+Route::get('/8', function () {
     return view('HacesEjercicio');
 });
 
-Route::get('/Encuesta-cuanto-duermes', function () {
+Route::get('/9', function () {
     return view('CuantoDuermes');
 });
-Route::get('/Encuesta-preparacion-comida', function () {
+Route::get('/10', function () {
     return view('PreparacionComida');
 });
-Route::get('/Restriccion-dieta', function () {
+Route::get('/11', function () {
     return view('Restriccion');
 });
-Route::get('/Vegetales-en-dieta', function () {
+Route::get('/12', function () {
     return view('Vegetales');
 });
-Route::get('/cereales-en-dieta', function () {
+Route::get('/13', function () {
     return view('CerealesEnDieta');
 });
-Route::get('/agregar-otros-productos-en-dieta', function () {
+Route::get('/14', function () {
     return view('ProductosEnDieta');
 });
-Route::get('/agregar-productos-marinos', function () {
+Route::get('/15', function () {
     return view('ProductosMarinos');
 });
-/*comentarios de pruebas*/
