@@ -11,52 +11,21 @@
 |
 */
 
+// Route::get('/', function () {
+//     return view('Perderpeso');
+// });
+Route::get('/', 'DireccionamientoRutasController@Vista1');
+Route::get('/seleccionar-genero', 'DireccionamientoRutasController@Vista2');
+Route::get('/peso-deseado', 'DireccionamientoRutasController@Vista3');
+Route::get('/comprobar-medidas', 'DireccionamientoRutasController@Vista4');
+Route::get('/dia-comun', 'DireccionamientoRutasController@Vista5');
+Route::get('/haces-ejercicio', 'DireccionamientoRutasController@Vista6');
+Route::get('/cuanto-duermes', 'DireccionamientoRutasController@Vista7');
+Route::get('/preparacion-comida', 'DireccionamientoRutasController@Vista8');
+Route::get('/restriccion-alimenticia-o-alergia', 'DireccionamientoRutasController@Vista9');
+Route::get('/agregar-vegetales', 'DireccionamientoRutasController@Vista10');
+Route::get('/agregar-cereales', 'DireccionamientoRutasController@Vista11');
+Route::get('/agregar-productos', 'DireccionamientoRutasController@Vista12');
+Route::get('/agregar-productos-marinos-o-carnes', 'DireccionamientoRutasController@Vista13');
 
-Route::get('/1', function () {
-    return view('PerderPeso');
-});
 
-Route::get('/2', function () {
-    return view('SeleccionaGenero');
-});
-
-Route::get('/3', function () {
-    return view('PesoDeseado');
-});
-
-Route::get('/4', function () {
-    return view('ComprobarMedidas');
-});
-
-Route::get('/6', function () {
-    return view('DiaComun');
-});
-
-Route::get('/7', function () {
-    return view('Encuesta');
-});
-Route::get('/8', function () {
-    return view('HacesEjercicio');
-});
-
-Route::get('/9', function () {
-    return view('CuantoDuermes');
-});
-Route::get('/10', function () {
-    return view('PreparacionComida');
-});
-Route::get('/11', function () {
-    return view('Restriccion');
-});
-Route::get('/12', function () {
-    return view('Vegetales');
-});
-Route::get('/13', function () {
-    return view('CerealesEnDieta');
-});
-Route::get('/14', function () {
-    return view('ProductosEnDieta');
-});
-Route::get('/15', function () {
-    return view('ProductosMarinos');
-});

@@ -20,13 +20,13 @@
         <div class="text-left">
         </div>
         <div class="text-right">
-            <b><a href="#" class="text-right">20/21</a></b>
+            <b><a href="#" class="text-right">{{$NumVentana}}/{{$LimiteVentanas}}</a></b>
         </div>
         <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 97%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">97%</div>
+            <div class="progress-bar" role="progressbar" style="width:{{$PorcentajeProgressBar}}%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{$PorcentajeProgressBar}}%</div>
         </div>
         <div class="text-left">
-            <b><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+            <b><a href="/agregar-productos"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
                 <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
               </svg> Paso anterior</a></b>
         </div>
@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <button class="btn btn-outline-success btn-block">Continuar</button>
+                    <a href="/" class="btn btn-outline-success btn-block">Continuar</a>
                 </div>
             </div>
         </div>
