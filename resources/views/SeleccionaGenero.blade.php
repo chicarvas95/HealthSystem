@@ -58,8 +58,8 @@
                 </div>
             </div>
         </div>
-        @include('shared.footer')
     </div>
+    @include('shared.footer')
 </body>
 
 </html>
