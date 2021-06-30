@@ -27,5 +27,4 @@ Route::get('/agregar-vegetales', 'DireccionamientoRutasController@Vista10');
 Route::get('/agregar-cereales', 'DireccionamientoRutasController@Vista11');
 Route::get('/agregar-productos', 'DireccionamientoRutasController@Vista12');
 Route::get('/agregar-productos-marinos-o-carnes', 'DireccionamientoRutasController@Vista13');
-
-
+Route::get('/prueba', 'DireccionamientoRutasController@Vista13');
