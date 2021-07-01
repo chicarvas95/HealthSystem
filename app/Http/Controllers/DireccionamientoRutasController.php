@@ -20,10 +20,12 @@ class DireccionamientoRutasController extends Controller
         $PorcentajeProgressBar = 6;
         $NumVentana = 2;
         $LimiteVentanas = 15;
+        
         return view('SeleccionaGenero')
         ->with('PorcentajeProgressBar', $PorcentajeProgressBar)
         ->with('NumVentana',$NumVentana)
-        ->with('LimiteVentanas',$LimiteVentanas);
+        ->with('LimiteVentanas',$LimiteVentanas)->render();
+        return response()->json(['success'=> true],200);
     }
 
     public function Vista3(){
