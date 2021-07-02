@@ -16,6 +16,7 @@
         <div class="text-left"></div>
         <div class="text-right">
             <b>
+                {{ route('direccion.index') }}
                 <a href="#" class="text-right">{{$NumVentana}}/{{$LimiteVentanas}}</a>
             </b>
         </div>
@@ -29,7 +30,7 @@
     </div>
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h6 class="display-4">¿Quieres perder peso? </h6>
+        <h6 class="display-4">¿Quieres perder peso? {{ route('direccion.index') }}</h6>
         <p class="lead">Recuerda: perder o ganar peso no es lo mas importante, sino conseguir una vida mucho más saludable.</p>
     </div>
 

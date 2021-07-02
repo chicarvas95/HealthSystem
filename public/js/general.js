@@ -1,25 +1,15 @@
-function ContinuarSeleccionarGenero() {
-
-    if ($('#ATC').prop('checked')) {
-        alert('los terminos fueron aceptados');
+$(document).ready(()=> {
+    function get_data() {
+        var action = '';
+        $.ajax({
+                url: 'http://127.0.0.1:8000/' + action,
+                method: 'GET',
+                cache: false,
+                dataType: 'json',
+                beforeSend: function () {}
+            })
+            .done(res => {
+                alert("Ya tengo al variable");
+            });
     }
-    if ($('#AOS').prop('checked')) {
-        alert('me gustaria recibir notificaciones');
-    }
-
-    $.ajax({
-        method: 'GET',
-        url: 'seleccionar-genero',
-        data: {},
-        success: function(response) {
-            //if (response.success) {
-            alert('satisfactorio');
-            window.location.replace('Seleccionar-Genero');
-            //}
-        },
-        error: function(e) {}
-    });
-
-
-
-}
+});
