@@ -16,12 +16,8 @@
 <body>
 
     @include('shared.navbar')
-
     <div class="container">
-
-
         <div class="text-left">
-
         </div>
         <div class="text-right">
             <b><a href="#" class="text-right">{{$NumVentana}}/{{$LimiteVentanas}}</a></b>
@@ -47,58 +43,60 @@
                     Selecciona una opción
                 </div>
                 <div class="card-body">
+                    <form action="agregar-productos-marinos-o-carnes" method="post">\
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="col-md-12">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="AT" type="checkbox" value="Aguacate" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Aguacate
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="FJ" type="checkbox" value="Frijoles" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Frijoles
                             </label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="ST" type="checkbox" value="Setas" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Setas
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="HV" type="checkbox" value="Huevos" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Huevos
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="LC" type="checkbox" value="Leche" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Leche
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="RQ" type="checkbox" value="Requeson" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Requesón
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="TF" type="checkbox" value="Tofu" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Tofu
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="HM" type="checkbox" value="Hummus" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Hummus
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="LV" type="checkbox" value="Leche Vegetal" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Leche Vegetal
                             </label>
@@ -107,8 +105,9 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="/agregar-productos-marinos-o-carnes" class="btn btn-outline-success btn-block">Continuar</a>
+                    <input type="submit" class="btn btn-outline-success btn-block" value="Continuar"/>
                 </div>
+            </form>
             </div>
         </div>
     </div>

@@ -44,22 +44,24 @@
                     Selecciona una opción
                 </div>
                 <div class="card-body text-center">
+                    <form action="restriccion-alimenticia-o-alergia" method="post">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="col-md-12">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="MTM" type="radio" value="Menos 30 minutos" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Menos de 30 minutos
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="ETSM" type="radio" value="Entre 30 y 60 minutos" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Entre 30 y 60 minutos
                             </label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="MDH" type="radio" value="mas de una hora" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Mas de una hora
                             </label>
@@ -67,8 +69,9 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="/restriccion-alimenticia-o-alergia" class="btn btn-success btn-block">Continuar</a>
+                    <input type="submit" class="btn btn-success btn-block" value="Continuar"/>
                 </div>
+            </form>
             </div>
         </div>
 

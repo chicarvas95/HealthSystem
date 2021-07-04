@@ -49,7 +49,11 @@
                 </div>
                 <div class="card-body">
                     <i class="fas fa-camera"></i>
-                    <a href="/haces-ejercicio" class="btn btn-lg btn-block btn-outline-primary">Continuar</a>
+                    <form method="post" action="haces-ejercicio">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <input type="hidden" name="MCA" value="TWF5b3JtZW50ZSBlbiBjYXNh">
+                    <input type="submit" class="btn btn-lg btn-block btn-outline-danger" value="Continuar">
+                </form>
                 </div>
             </div>
             <div class="card mb-4 box-shadow">
@@ -57,7 +61,11 @@
                     <h4 class="my-0 font-weight-normal">En la oficina</h4>
                 </div>
                 <div class="card-body">
-                    <a href="/haces-ejercicio" class="btn btn-lg btn-block btn-outline-danger">Continuar</a>
+                    <form method="post" action="haces-ejercicio">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <input type="hidden" name="SGV" value="T2ZpY2luYQ==">
+                    <input type="submit" class="btn btn-lg btn-block btn-outline-danger" value="Continuar">
+                </form>
                 </div>
             </div>
             <div class="card mb-4 box-shadow">
@@ -65,7 +73,11 @@
                     <h4 class="my-0 font-weight-normal">Largas caminatas diarias</h4>
                 </div>
                 <div class="card-body">
-                    <a href="/haces-ejercicio" class="btn btn-lg btn-block btn-outline-warning">Continuar</a>
+                    <form method="post" action="haces-ejercicio">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <input type="hidden" name="CYI" value="Q2FtaW5hdGFzIERpYXJpYXM=">
+                    <input type="submit" class="btn btn-lg btn-block btn-outline-danger" value="Continuar">
+                </form>
                 </div>
             </div>
 
@@ -74,7 +86,11 @@
                     <h4 class="my-0 font-weight-normal">Trabajo fisico</h4>
                 </div>
                 <div class="card-body">
-                    <a href="/haces-ejercicio" class="btn btn-lg btn-block btn-outline-success">Continuar</a>
+                    <form method="post" action="haces-ejercicio">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <input type="hidden" name="TSY" value="VHJhYmFqbyBmaXNpY28=">
+                    <input type="submit" class="btn btn-lg btn-block btn-outline-danger" value="Continuar">
+                </form>
                 </div>
             </div>
         </div>

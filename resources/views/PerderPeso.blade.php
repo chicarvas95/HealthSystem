@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,8 +42,13 @@
                     <h4 class="my-0 font-weight-normal">Sí, deseo perder peso</h4>
                 </div>
                 <div class="card-body">
-                    <i class="fas fa-camera"></i>
-                    <a href="/seleccionar-genero" class="btn btn-lg btn-block btn-outline-primary"> Seleccionar</a>
+                    <form method="post" action="seleccionar-genero">
+                        <i class="fas fa-camera"></i>
+                        <!-- <a href="/seleccionar-genero" class="btn btn-lg btn-block btn-outline-primary"> Seleccionar</a> -->
+                        <input type="hidden" name="PP" value="U2k=">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <input class="btn btn-lg btn-block btn-outline-primary" type="submit" value="Seleccionar">
+                    </form>
                 </div>
             </div>
             <div class="card mb-4 box-shadow">
@@ -50,7 +56,11 @@
                     <h4 class="my-0 font-weight-normal">No, deseo ganar peso o conservarlo</h4>
                 </div>
                 <div class="card-body">
-                    <a href="/seleccionar-genero" class="btn btn-lg btn-block btn-outline-success"> Seleccionar</a>
+                    <form method="post" action="seleccionar-genero">
+                        <input type="hidden" name="PP" value="Tm8=">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <input class="btn btn-lg btn-block btn-outline-primary" type="submit" value="Seleccionar">
+                    </form>
                 </div>
             </div>
         </div>

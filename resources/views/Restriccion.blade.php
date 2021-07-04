@@ -14,14 +14,9 @@
 </head>
 
 <body>
-
     @include('shared.navbar')
-
     <div class="container">
-
-
         <div class="text-left">
-
         </div>
         <div class="text-right">
             <b><a href="#" class="text-right">{{$NumVentana}}/{{$LimiteVentanas}}</a></b>
@@ -47,28 +42,30 @@
                     Selecciona las restricciones que correspondan a tu caso
                 </div>
                 <div class="card-body">
+                    <form action="agregar-vegetales" method="post">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="col-md-12">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="IL" type="checkbox" value="Intolerante a la lactosa" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Soy intolerante a la lactosa
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="SC" type="checkbox" value="Soy celiaco" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Soy celiaco
                             </label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="SV" type="checkbox" value="Soy vegetariano" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Soy vegetariano
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="SVNO" type="checkbox" value="Soy Vegano" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Soy vegano
                             </label>
@@ -76,7 +73,7 @@
                         <hr>
                         <div class="form-check">
 
-                            <input class="form-check-input" type="radio" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="ninguna de las anteriores" type="radio" value="" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Ninguna de las anteriores
                             </label>
@@ -85,8 +82,9 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="/agregar-vegetales" class="btn btn-outline-success btn-block">Continuar</a>
+                    <input type="submit" class="btn btn-outline-success btn-block" value="Continuar"/>
                 </div>
+            </form>
             </div>
         </div>
     </div>

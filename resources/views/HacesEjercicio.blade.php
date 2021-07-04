@@ -44,34 +44,36 @@
                     Selecciona una opción
                 </div>
                 <div class="card-body text-center">
+                    <form method="post" action="cuanto-duermes">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="col-md-12">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="PN" type="checkbox" value="Nada" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Practicamente nada
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="SC" type="checkbox" value="Solo Camino" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Solo camino
                             </label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="VS2" type="checkbox" value="Una o dos veces a la semana" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               1 o 2 veces a la semana
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="VS3" type="checkbox" value="Tres o cinco veces a la semana" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               3 o 5 veces a la semana
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="VS5" type="checkbox" value="Cinco o siete veces a la semana" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               5 o 7 veces a la semana
                             </label>
@@ -80,8 +82,9 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="/cuanto-duermes" class="btn btn-outline-success btn-block">Continuar</a>
+                    <input type="submit" class="btn btn-outline-success btn-block" value="Continuar">
                 </div>
+            </form>
             </div>
         </div>
     </div>

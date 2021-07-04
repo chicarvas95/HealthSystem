@@ -56,15 +56,18 @@
                     <h4 class="my-0 font-weight-normal">Peso deseado: </h4>
                 </div>
                 <div class="card-body">
-                    <form action="#" method="post">
+                    <form action="comprobar-medidas" method="post">
                         <div class="col">
-                            <input type="number" step="0.01" min="0.01" max="300" class="form-control" placeholder="Peso deseado">
+                            <input class="form-control"  type="number" step="0.01" min="0.01" max="300" name="PS" placeholder="Peso deseado">
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         </div>
-                    </form>
+                    
                 </div>
                 <div class="card-footer">
-                    <a href="/comprobar-medidas" class="btn btn-outline-success btn-block">Continuar</a>
+                    {{--  <a href="/comprobar-medidas" class="btn btn-outline-success btn-block">Continuar</a>  --}}
+                    <input type="submit" class="btn btn-outline-success btn-block" value="Continuar">
                 </div>
+            </form>
             </div>
         </div>
     </div>

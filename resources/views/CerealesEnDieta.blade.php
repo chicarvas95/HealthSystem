@@ -47,58 +47,60 @@
                     Selecciona una opción
                 </div>
                 <div class="card-body">
+                    <form method="post" action="agregar-productos">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="col-md-12">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="AZ" type="checkbox" value="Arroz" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Arroz
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="QN" type="checkbox" value="Quinoa" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Quinoa
                             </label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="CS" type="checkbox" value="Cuscus" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Cuscus
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="AT" type="checkbox" value="Alforfon o trigo sarraceno" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Alforfon o trigo sarraceno
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="AM" type="checkbox" value="Amaranto" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Amaranto
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="HM" type="checkbox" value="harina de maiz" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Harina de maiz
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="MG" type="checkbox" value="Mijo en grano" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Mijo en grano
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="BG" type="checkbox" value="Bulgur" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Bulgur
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="SM" type="checkbox" value="Sermola" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Sermola
                             </label>
@@ -107,8 +109,9 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="/agregar-productos" class="btn btn-outline-success btn-block">Continuar</a>
+                    <input type="submit" class="btn btn-outline-success btn-block" value="Continuar" />
                 </div>
+            </form>
             </div>
         </div>
 

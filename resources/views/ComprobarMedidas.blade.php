@@ -56,26 +56,27 @@
                     <h4 class="my-0 font-weight-normal">Mis medidas: </h4>
                 </div>
                 <div class="card-body">
-                <form>
+                <form action ="dia-comun" method="post">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="row">
                         <div class="col">
                             <label for="">Edad (Años): </label>
-                            <input type="number" step="1" min="18" max="55" class="form-control" placeholder="Mi edad">
+                            <input type="number" step="1" min="18" max="55" name= "Edad" class="form-control" placeholder="Mi edad">
                         </div>
                         <div class="col">
                             <label for="">Estatura: </label>
-                            <input type="number" step="0.01" min="100.00" max="250.00" class="form-control" placeholder="Mi estatura">
+                            <input type="number" step="0.01" min="100.00" max="250.00" name="Estatura" class="form-control" placeholder="Mi estatura">
                         </div>
                         <div class="col">
                             <label for="">Peso actual: </label>
-                            <input type="number" step="0.01" min="10" max="250" class="form-control" placeholder="Mi peso">
+                            <input type="number" step="0.01" min="10" max="250" name="PesoActual" class="form-control" placeholder="Mi peso">
                         </div>
                     </div>
-                </form>
                 </div>
                 <div class="card-footer">
-                    <a href="/dia-comun" class="btn btn-outline-success btn-block">Continuar</a>
+                    <input type="submit" class="btn btn-outline-success btn-block" value="Continuar">
                 </div>
+            </form>
             </div>
         </div>
     </div>

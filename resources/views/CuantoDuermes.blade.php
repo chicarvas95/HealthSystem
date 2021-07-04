@@ -49,28 +49,30 @@
                     Selecciona una opción
                 </div>
                 <div class="card-body text-center">
+                    <form method="post" action="preparacion-comida">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="col-md-12">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="MCH" type="radio" value="Menos de cincos horas" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Menos de 5 horas
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="ECSH" type="radio" value="Entre 5 y 6 horas" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Entre 5 y 6 horas
                             </label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="ESOH" type="radio" value="Entre 7 y 8 horas" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Entre 7 y 8 horas
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="MOH" type="radio" value="Mas de 8 horas" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Mas de 8 horas
                             </label>
@@ -78,8 +80,9 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="/preparacion-comida" class="btn btn-outline-success btn-block">Continuar</a>
+                    <input type="submit" class="btn btn-outline-success btn-block" value="Continuar"/>
                 </div>
+            </form>
             </div>
         </div>
     </div>

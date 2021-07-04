@@ -43,40 +43,42 @@
                     Selecciona las opciones que se acondicionen a tu dieta
                 </div>
                 <div class="card-body">
+                    <form action="fin-encuesta" method="post">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="col-md-12">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="PV" type="checkbox" value="Pavo" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Pavo
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="RS" type="checkbox" value="Res" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Res
                             </label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="PL" type="checkbox" value="Pollo" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Pollo
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="CD" type="checkbox" value="Cerdo" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Cerdo
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="PCD" type="checkbox" value="Pescado" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Pescado
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="MCS" type="checkbox" value="Mariscos" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Mariscos
                             </label>
@@ -84,18 +86,17 @@
 
                         <hr>
                         <div class="form-check">
-
-                            <input class="form-check-input" type="radio" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="NA" type="radio" value="ninguna de las anteriores" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Ninguna de las anteriores
                             </label>
-
                         </div>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="/" class="btn btn-outline-success btn-block">Continuar</a>
+                    <input type="submit" class="btn btn-outline-success btn-block" value="Continuar"/>
                 </div>
+            </form>
             </div>
         </div>
     </div>

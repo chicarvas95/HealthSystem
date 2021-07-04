@@ -47,64 +47,66 @@
                     Selecciona una opción
                 </div>
                 <div class="card-body">
+                    <form method="post" action="agregar-cereales">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="col-md-12">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="BR" type="checkbox" value="Brocoli" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Brocoli
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="CL" type="checkbox" value="Coliflor" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Coliflor
                             </label>
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="PT" type="checkbox" value="Pimiento" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Pimiento
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="BNA" type="checkbox" value="Berenjena" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Berenjena
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="RP" type="checkbox" value="Repollo" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Repollo
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="EP" type="checkbox" value="Esparragos" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Esparragos
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="ESP" type="checkbox" value="Espinacas" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Espinacas
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="Clla" type="checkbox" value="Cebolla" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Cebolla
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="TTE" type="checkbox" value="Tomate" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Tomate
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" name="PNO" type="checkbox" value="Pepino" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
                               Pepino
                             </label>
@@ -113,8 +115,9 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="/agregar-cereales" class="btn btn-outline-success btn-block">Continuar</a>
+                    <input type="submit" class="btn btn-outline-success btn-block" value="Continuar" />
                 </div>
+            </form>
             </div>
         </div>
     </div>
